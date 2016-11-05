@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [IMDB Top 250 Search]">
-  <test name="HomePage Tests(failed)">
+  <parameter name="initialGenre" value="Drama"/>
+  <test name="IMDB Top Charts(failed)">
+    <parameter name="initialGenre" value="Drama"/>
     <classes>
-      <class name="com.ge.imdb.demo.HomePageTest">
+      <class name="com.imdb.demo.TopChartsPageTest">
         <methods>
-          <include name="shouldDisplayMenuOnClick"/>
-          <include name="finishWebDriver"/>
-          <include name="startWebdriver"/>
+          <include name="selectByRanking"/>
+          <include name="selectByYourRating"/>
+          <include name="selectIMDBRating"/>
+          <include name="selectByReleaseDate"/>
+          <include name="isTopChartsPageLoaded"/>
+          <include name="selectByNumberOfRatings"/>
+          <include name="areInitialResultsLoaded"/>
         </methods>
-      </class> <!-- com.ge.imdb.demo.HomePageTest -->
+      </class> <!-- com.imdb.demo.TopChartsPageTest -->
+      <class name="com.imdb.demo.HomePageTest">
+        <methods>
+          <include name="startWebdriver"/>
+          <include name="finishWebDriver"/>
+        </methods>
+      </class> <!-- com.imdb.demo.HomePageTest -->
     </classes>
-  </test> <!-- HomePage Tests(failed) -->
+  </test> <!-- IMDB Top Charts(failed) -->
 </suite> <!-- Failed suite [IMDB Top 250 Search] -->

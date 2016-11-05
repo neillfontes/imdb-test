@@ -6,10 +6,17 @@
 			<class name="com.imdb.demo.HomePageTest" />
 		</classes>
 	</test>
-	<!-- 
-	<test name="Top Charts ">
+	<test name="IMDB Top Charts">
+		<parameter name="initialGenre" value="Western"/> 
 		<classes>
-			<class name="com.ge.imdb.demo.ResultPageTest" />
+			<class name="com.imdb.demo.TopChartsPageTest" />
 		</classes>
-	</test>  -->
+	</test>
+	<test name="IMDB Top Charts > Western">
+		<parameter name="genre" value="Western"/> 
+		<classes>
+			<class name="com.imdb.demo.ResultsByGenreTest">
+			</class>
+		</classes>
+	</test>
 </suite>

@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverHelper {
@@ -32,7 +33,7 @@ public class WebDriverHelper {
 		webDriver = driver;
 	}
 
-	public static WebDriver getDriver() {
+	public WebDriver getDriver() {
 		return webDriver;
 	}
 
@@ -173,6 +174,12 @@ public class WebDriverHelper {
 		List tmp = new ArrayList(list);
 		Collections.sort(tmp);
 		return tmp.equals(list);
+	}
+	
+	public Select getSelect(String xpathExp) {
+		Select select = new Select(webDriver.findElement(By.xpath(xpathExp)));
+		return select;
+		
 	}
 	
 	public void printURL(){

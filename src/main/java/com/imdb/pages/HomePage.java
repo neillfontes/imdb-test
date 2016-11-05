@@ -1,7 +1,6 @@
 package com.imdb.pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.imdb.helper.WebDriverHelper;
 
