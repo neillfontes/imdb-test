@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IMDB Top 250 Search">
+	<test name="HomePage Tests">
+		<classes>
+			<class name="com.imdb.demo.HomePageTest" />
+		</classes>
+	</test>
+	<!-- 
+	<test name="Top Charts ">
+		<classes>
+			<class name="com.ge.imdb.demo.ResultPageTest" />
+		</classes>
+	</test>  -->
+</suite>

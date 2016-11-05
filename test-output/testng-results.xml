@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="IMDB Top 250 Search" duration-ms="917" started-at="2016-11-05T16:58:33Z" finished-at="2016-11-05T16:58:34Z">
+    <groups>
+    </groups>
+    <test name="HomePage Tests" duration-ms="917" started-at="2016-11-05T16:58:33Z" finished-at="2016-11-05T16:58:34Z">
+      <class name="com.imdb.demo.HomePageTest">
+        <test-method status="PASS" signature="startWebdriver()[pri:0, instance:com.imdb.demo.HomePageTest@77caeb3e]" name="startWebdriver" is-config="true" duration-ms="7584" started-at="2016-11-05T17:58:25Z" finished-at="2016-11-05T17:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebdriver -->
+        <test-method status="PASS" signature="isHomePageLoaded()[pri:0, instance:com.imdb.demo.HomePageTest@77caeb3e]" name="isHomePageLoaded" duration-ms="119" started-at="2016-11-05T17:58:33Z" finished-at="2016-11-05T17:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHomePageLoaded -->
+        <test-method status="PASS" signature="shouldDisplayMenuOnHover()[pri:0, instance:com.imdb.demo.HomePageTest@77caeb3e]" name="shouldDisplayMenuOnHover" duration-ms="637" started-at="2016-11-05T17:58:33Z" depends-on-methods="com.imdb.demo.HomePageTest.isHomePageLoaded" finished-at="2016-11-05T17:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldDisplayMenuOnHover -->
+        <test-method status="PASS" signature="clickTopChartMenu()[pri:0, instance:com.imdb.demo.HomePageTest@77caeb3e]" name="clickTopChartMenu" duration-ms="143" started-at="2016-11-05T17:58:34Z" depends-on-methods="com.imdb.demo.HomePageTest.shouldDisplayMenuOnHover" finished-at="2016-11-05T17:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTopChartMenu -->
+        <test-method status="PASS" signature="finishWebDriver()[pri:0, instance:com.imdb.demo.HomePageTest@77caeb3e]" name="finishWebDriver" is-config="true" duration-ms="72" started-at="2016-11-05T17:58:34Z" finished-at="2016-11-05T17:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishWebDriver -->
+      </class> <!-- com.imdb.demo.HomePageTest -->
+    </test> <!-- HomePage Tests -->
+  </suite> <!-- IMDB Top 250 Search -->
+</testng-results>

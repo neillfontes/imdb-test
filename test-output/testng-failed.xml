@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [IMDB Top 250 Search]">
+  <test name="HomePage Tests(failed)">
+    <classes>
+      <class name="com.ge.imdb.demo.HomePageTest">
+        <methods>
+          <include name="shouldDisplayMenuOnClick"/>
+          <include name="finishWebDriver"/>
+          <include name="startWebdriver"/>
+        </methods>
+      </class> <!-- com.ge.imdb.demo.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage Tests(failed) -->
+</suite> <!-- Failed suite [IMDB Top 250 Search] -->
