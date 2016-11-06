@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests">
-              <span class="suite-name border-passed">IMDB HomePage, Top Charts and Genre Page Tests</span>
+              <span class="suite-name border-failed">IMDB HomePage, Top Charts and Genre Page Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests" class="hide-methods failed suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests"> (hide)</a> <!-- hide-methods failed suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests -->
+                      <a href="#" panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests" class="show-methods failed suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests"> (show)</a> <!-- show-methods failed suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests" title="com.imdb.demo.TopChartsPageTest" hash-for-method="selectByRanking">selectByRanking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -138,11 +152,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests" title="com.imdb.demo.TopChartsPageTest" hash-for-method="selectByNumberOfRatings">selectByNumberOfRatings</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests" title="com.imdb.demo.TopChartsPageTest" hash-for-method="selectByRanking">selectByRanking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -217,6 +226,117 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests" class="panel IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests">
+          <div class="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.imdb.demo.TopChartsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByRanking">
+                  </a> <!-- selectByRanking -->
+                  <span class="method-name">selectByRanking</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expecting:
+ &lt;false&gt;
+to be equal to:
+ &lt;true&gt;
+but was not.
+	at com.imdb.demo.TopChartsPageTest.selectByRanking(TopChartsPageTest.java:35)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-failed -->
+          <div class="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imdb.demo.TopChartsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="areInitialResultsLoaded">
+                  </a> <!-- areInitialResultsLoaded -->
+                  <span class="method-name">areInitialResultsLoaded</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnGenre(Western)">
+                  </a> <!-- clickOnGenre(Western) -->
+                  <span class="method-name">clickOnGenre</span>
+                  <span class="parameters">(Western)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isTopChartsPageLoaded">
+                  </a> <!-- isTopChartsPageLoaded -->
+                  <span class="method-name">isTopChartsPageLoaded</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByNumberOfRatings">
+                  </a> <!-- selectByNumberOfRatings -->
+                  <span class="method-name">selectByNumberOfRatings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByReleaseDate">
+                  </a> <!-- selectByReleaseDate -->
+                  <span class="method-name">selectByReleaseDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectByYourRating">
+                  </a> <!-- selectByYourRating -->
+                  <span class="method-name">selectByYourRating</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectIMDBRating">
+                  </a> <!-- selectIMDBRating -->
+                  <span class="method-name">selectIMDBRating</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed -->
+          <div class="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.imdb.demo.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickTopChartMenu">
+                  </a> <!-- clickTopChartMenu -->
+                  <span class="method-name">clickTopChartMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isHomePageLoaded">
+                  </a> <!-- isHomePageLoaded -->
+                  <span class="method-name">isHomePageLoaded</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldDisplayMenuOnHover">
+                  </a> <!-- shouldDisplayMenuOnHover -->
+                  <span class="method-name">shouldDisplayMenuOnHover</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed -->
           <div class="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -292,100 +412,6 @@
                   <a name="sortByYear">
                   </a> <!-- sortByYear -->
                   <span class="method-name">sortByYear</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed -->
-          <div class="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.imdb.demo.TopChartsPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="areInitialResultsLoaded">
-                  </a> <!-- areInitialResultsLoaded -->
-                  <span class="method-name">areInitialResultsLoaded</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnGenre(Western)">
-                  </a> <!-- clickOnGenre(Western) -->
-                  <span class="method-name">clickOnGenre</span>
-                  <span class="parameters">(Western)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isTopChartsPageLoaded">
-                  </a> <!-- isTopChartsPageLoaded -->
-                  <span class="method-name">isTopChartsPageLoaded</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectByNumberOfRatings">
-                  </a> <!-- selectByNumberOfRatings -->
-                  <span class="method-name">selectByNumberOfRatings</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectByRanking">
-                  </a> <!-- selectByRanking -->
-                  <span class="method-name">selectByRanking</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectByReleaseDate">
-                  </a> <!-- selectByReleaseDate -->
-                  <span class="method-name">selectByReleaseDate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectByYourRating">
-                  </a> <!-- selectByYourRating -->
-                  <span class="method-name">selectByYourRating</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectIMDBRating">
-                  </a> <!-- selectIMDBRating -->
-                  <span class="method-name">selectIMDBRating</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed -->
-          <div class="suite-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.imdb.demo.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickTopChartMenu">
-                  </a> <!-- clickTopChartMenu -->
-                  <span class="method-name">clickTopChartMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isHomePageLoaded">
-                  </a> <!-- isHomePageLoaded -->
-                  <span class="method-name">isHomePageLoaded</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldDisplayMenuOnHover">
-                  </a> <!-- shouldDisplayMenuOnHover -->
-                  <span class="method-name">shouldDisplayMenuOnHover</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -488,92 +514,92 @@ data.addRows(21);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'isTopChartsPageLoaded')
 data.setCell(0, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(0, 3, 3098);
+data.setCell(0, 3, 4481);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'isResultsByGenrePageLoaded')
+data.setCell(1, 1, 'sortByAlphabetical')
 data.setCell(1, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(1, 3, 2295);
+data.setCell(1, 3, 3261);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'sortByAlphabetical')
+data.setCell(2, 1, 'sortByYear')
 data.setCell(2, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(2, 3, 2285);
+data.setCell(2, 3, 3224);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'sortByYear')
+data.setCell(3, 1, 'sortByPopularity')
 data.setCell(3, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(3, 3, 2175);
+data.setCell(3, 3, 3085);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'sortByReleaseDate')
+data.setCell(4, 1, 'sortByIMDBRating')
 data.setCell(4, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(4, 3, 2162);
+data.setCell(4, 3, 3044);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'sortByRuntime')
+data.setCell(5, 1, 'sortByReleaseDate')
 data.setCell(5, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(5, 3, 2141);
+data.setCell(5, 3, 2974);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'sortByNumberOfVotes')
+data.setCell(6, 1, 'sortByRuntime')
 data.setCell(6, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(6, 3, 2061);
+data.setCell(6, 3, 2840);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'sortByPopularity')
+data.setCell(7, 1, 'sortByNumberOfVotes')
 data.setCell(7, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(7, 3, 2049);
+data.setCell(7, 3, 2638);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'sortByIMDBRating')
+data.setCell(8, 1, 'isResultsByGenrePageLoaded')
 data.setCell(8, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(8, 3, 2046);
+data.setCell(8, 3, 2626);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'sortByUSBoxOffice')
 data.setCell(9, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(9, 3, 1880);
+data.setCell(9, 3, 2612);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'selectByNumberOfRatings')
+data.setCell(10, 1, 'selectByYourRating')
 data.setCell(10, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(10, 3, 1376);
+data.setCell(10, 3, 1839);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'selectByRanking')
+data.setCell(11, 1, 'selectByNumberOfRatings')
 data.setCell(11, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(11, 3, 1224);
+data.setCell(11, 3, 1605);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'selectByReleaseDate')
 data.setCell(12, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(12, 3, 1002);
+data.setCell(12, 3, 1404);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'selectByYourRating')
+data.setCell(13, 1, 'selectByRanking')
 data.setCell(13, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(13, 3, 1000);
+data.setCell(13, 3, 1348);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'shouldDisplayMenuOnHover')
 data.setCell(14, 2, 'com.imdb.demo.HomePageTest')
-data.setCell(14, 3, 648);
+data.setCell(14, 3, 691);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'selectIMDBRating')
 data.setCell(15, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(15, 3, 336);
+data.setCell(15, 3, 487);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'clickOnGenre')
 data.setCell(16, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(16, 3, 220);
+data.setCell(16, 3, 359);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'clickTopChartMenu')
 data.setCell(17, 2, 'com.imdb.demo.HomePageTest')
-data.setCell(17, 3, 151);
+data.setCell(17, 3, 229);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'areInitialResultsLoaded')
 data.setCell(18, 2, 'com.imdb.demo.TopChartsPageTest')
-data.setCell(18, 3, 149);
+data.setCell(18, 3, 206);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'isHomePageLoaded')
 data.setCell(19, 2, 'com.imdb.demo.HomePageTest')
-data.setCell(19, 3, 110);
+data.setCell(19, 3, 159);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'areInitialResultsLoaded')
 data.setCell(20, 2, 'com.imdb.demo.ResultsByGenreTest')
-data.setCell(20, 3, 63);
+data.setCell(20, 3, 109);
 window.suiteTableData['IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests']= { tableData: data, tableDiv: 'times-div-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests">
               </div> <!-- times-div-IMDB_HomePage,_Top_Charts_and_Genre_Page_Tests -->
             </div> <!-- times-div -->
@@ -604,102 +630,108 @@ return data;
                 <span class="method-name">startWebdriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">logClass</span>
+                <span class="method-start">14421 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">isHomePageLoaded</span>
-                <span class="method-start">17044 ms</span>
+                <span class="method-start">14427 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">shouldDisplayMenuOnHover</span>
-                <span class="method-start">17157 ms</span>
+                <span class="method-start">14590 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickTopChartMenu</span>
-                <span class="method-start">17807 ms</span>
+                <span class="method-start">15283 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.imdb.demo.TopChartsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">isTopChartsPageLoaded</span>
-                <span class="method-start">17993 ms</span>
+                <span class="method-start">15533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectByNumberOfRatings</span>
-                <span class="method-start">21093 ms</span>
+                <span class="method-start">20016 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">selectByRanking</span>
-                <span class="method-start">22474 ms</span>
+                <span class="method-start">21623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectByReleaseDate</span>
-                <span class="method-start">23700 ms</span>
+                <span class="method-start">22974 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectByYourRating</span>
-                <span class="method-start">24703 ms</span>
+                <span class="method-start">24380 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectIMDBRating</span>
-                <span class="method-start">25705 ms</span>
+                <span class="method-start">26220 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">areInitialResultsLoaded</span>
-                <span class="method-start">26044 ms</span>
+                <span class="method-start">26709 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickOnGenre(Western)</span>
-                <span class="method-start">26197 ms</span>
+                <span class="method-start">26920 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.imdb.demo.ResultsByGenreTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">isResultsByGenrePageLoaded(Western)</span>
-                <span class="method-start">26423 ms</span>
+                <span class="method-start">27290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">areInitialResultsLoaded</span>
-                <span class="method-start">28719 ms</span>
+                <span class="method-start">29917 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByAlphabetical</span>
-                <span class="method-start">28784 ms</span>
+                <span class="method-start">30027 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByIMDBRating</span>
-                <span class="method-start">31070 ms</span>
+                <span class="method-start">33289 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByNumberOfVotes</span>
-                <span class="method-start">33118 ms</span>
+                <span class="method-start">36335 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByPopularity</span>
-                <span class="method-start">35180 ms</span>
+                <span class="method-start">38980 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByReleaseDate</span>
-                <span class="method-start">37230 ms</span>
+                <span class="method-start">42068 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByRuntime</span>
-                <span class="method-start">39396 ms</span>
+                <span class="method-start">45045 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByUSBoxOffice</span>
-                <span class="method-start">41538 ms</span>
+                <span class="method-start">47889 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sortByYear</span>
-                <span class="method-start">43419 ms</span>
+                <span class="method-start">50503 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.imdb.demo.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">finishWebDriver</span>
-                <span class="method-start">45598 ms</span>
+                <span class="method-start">53734 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

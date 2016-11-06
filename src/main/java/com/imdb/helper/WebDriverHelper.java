@@ -16,8 +16,11 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.log4j.Logger;
 
 public class WebDriverHelper {
+
+	static Logger log = Logger.getLogger(WebDriverHelper.class);
 
 	private static WebDriverHelper webDriverHelper = new WebDriverHelper();
 	private static WebDriver webDriver;
@@ -53,6 +56,7 @@ public class WebDriverHelper {
 	}
 
 	public void clickElement(String xpathExp) {
+		log.info("Clicking on element: " + xpathExp);
 		webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement el = webDriver.findElement(By.xpath(xpathExp));
 		if (el != null) {
@@ -109,20 +113,26 @@ public class WebDriverHelper {
 	}
 	
 	public WebElement getElement(String xpathExp) {
+		log.info("Getting element: " + xpathExp);
 		webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement element = webDriver.findElement(By.xpath(xpathExp));
 		if (element != null) {
+			log.info("Returning element: " + element.getText());
 			return element;
 		}
+		log.info("Element could not be returned");
 		return null;
 	}
 
 	public List<WebElement> getListOfElements(String xpathExp) {
+		log.info("Getting list of elements: " + xpathExp);
 		webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		List<WebElement> element = webDriver.findElements(By.xpath(xpathExp));
 		if (element != null) {
+			log.info("Number of elements found in list: " + element.size());
 			return element;
 		}
+		log.info("List of elements could not be returned");
 		return new ArrayList<>();
 	}
 
@@ -165,6 +175,7 @@ public class WebDriverHelper {
 	}
 	
 	public void hoverOn(String xpathExp) {
+		log.info("Hovering on: " + xpathExp);
 		WebElement element = webDriver.findElement(By.xpath(xpathExp));
 		Actions action = new Actions(webDriver);
 		action.moveToElement(element).build().perform();
@@ -177,9 +188,7 @@ public class WebDriverHelper {
 	}
 	
 	public Select getSelect(String xpathExp) {
-		Select select = new Select(webDriver.findElement(By.xpath(xpathExp)));
-		return select;
-		
+		return new Select(webDriver.findElement(By.xpath(xpathExp)));
 	}
 	
 	public void printURL(){

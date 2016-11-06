@@ -52,7 +52,7 @@ public class TopChartsPageTest {
 		assertThat(tcp.getNumberOfResultsLoaded()).isGreaterThan(MINIMUM_RESULTS_EXPECTED);
 	}
 	
-	@Test (dependsOnGroups = { "resultCount" })
+	@Test (dependsOnGroups = { "resultCount" }, alwaysRun = true)
 	@Parameters("initialGenre")
 	public void clickOnGenre(String initialGenre){
 		tcp.clickOnGenre(initialGenre);

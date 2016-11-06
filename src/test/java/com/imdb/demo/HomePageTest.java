@@ -30,6 +30,11 @@ public class HomePageTest {
 		driver.quit();
 	}
 	
+	@BeforeClass
+	public void logClass(){
+		
+	}
+	
 	@Test
 	public void isHomePageLoaded(){
 		assertThat(hp.isHomePageLoaded()).isTrue();
