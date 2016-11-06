@@ -11,7 +11,6 @@ public class TopChartsPage {
 	
 	private WebDriverHelper wdHelper;
 
-	private static final String BODY	 							= "//body";
 	private static final String EXPECTED_TITLE						= "IMDb Top 250 - IMDb";
 	private static final String TABLE_RESULTS_COUNT					= "//table[@class = 'chart full-width']//tbody//tr";
 	private static final String SELECT_SORTING						= "//select[@class = 'lister-sort-by']";

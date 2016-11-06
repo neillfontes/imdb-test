@@ -1,18 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="IMDB Top 250 Search">
-	<test name="HomePage Tests">
+<suite name="IMDB HomePage, Top Charts and Genre Page Tests">
+	<test name="HomePage > Top Charts">
 		<classes>
 			<class name="com.imdb.demo.HomePageTest" />
 		</classes>
 	</test>
-	<test name="IMDB Top Charts">
+	<test name="Top Charts > Genre Page - Western">
 		<parameter name="initialGenre" value="Western"/> 
 		<classes>
 			<class name="com.imdb.demo.TopChartsPageTest" />
 		</classes>
 	</test>
-	<test name="IMDB Top Charts > Western">
+	<test name="Genre Page - Western">
 		<parameter name="genre" value="Western"/> 
 		<classes>
 			<class name="com.imdb.demo.ResultsByGenreTest">

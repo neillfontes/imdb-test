@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [IMDB Top 250 Search]">
-  <parameter name="initialGenre" value="Drama"/>
-  <test name="IMDB Top Charts(failed)">
-    <parameter name="initialGenre" value="Drama"/>
+  <parameter name="initialGenre" value="War"/>
+  <parameter name="genre" value="War"/>
+  <test name="HomePage Tests(failed)">
+    <classes>
+      <class name="com.imdb.demo.HomePageTest">
+        <methods>
+          <include name="shouldDisplayMenuOnHover"/>
+          <include name="startWebdriver"/>
+          <include name="isHomePageLoaded"/>
+          <include name="clickTopChartMenu"/>
+          <include name="finishWebDriver"/>
+        </methods>
+      </class> <!-- com.imdb.demo.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage Tests(failed) -->
+  <test name="IMDB Top Charts &gt; Western(failed)">
+    <parameter name="initialGenre" value="Western"/>
     <classes>
       <class name="com.imdb.demo.TopChartsPageTest">
         <methods>
           <include name="selectByRanking"/>
           <include name="selectByYourRating"/>
           <include name="selectIMDBRating"/>
+          <include name="clickOnGenre"/>
           <include name="selectByReleaseDate"/>
           <include name="isTopChartsPageLoaded"/>
           <include name="selectByNumberOfRatings"/>
@@ -23,5 +38,30 @@
         </methods>
       </class> <!-- com.imdb.demo.HomePageTest -->
     </classes>
-  </test> <!-- IMDB Top Charts(failed) -->
+  </test> <!-- IMDB Top Charts > Western(failed) -->
+  <test name="IMDB Genre Page &gt; Western(failed)">
+    <parameter name="genre" value="Western"/>
+    <classes>
+      <class name="com.imdb.demo.ResultsByGenreTest">
+        <methods>
+          <include name="sortByYear"/>
+          <include name="sortByRuntime"/>
+          <include name="isResultsByGenrePageLoaded" invocation-numbers="0"/>
+          <include name="sortByPopularity"/>
+          <include name="sortByAlphabetical"/>
+          <include name="sortByNumberOfVotes"/>
+          <include name="sortByIMDBRating"/>
+          <include name="sortByReleaseDate"/>
+          <include name="sortByUSBoxOffice"/>
+          <include name="areInitialResultsLoaded"/>
+        </methods>
+      </class> <!-- com.imdb.demo.ResultsByGenreTest -->
+      <class name="com.imdb.demo.HomePageTest">
+        <methods>
+          <include name="startWebdriver"/>
+          <include name="finishWebDriver"/>
+        </methods>
+      </class> <!-- com.imdb.demo.HomePageTest -->
+    </classes>
+  </test> <!-- IMDB Genre Page > Western(failed) -->
 </suite> <!-- Failed suite [IMDB Top 250 Search] -->

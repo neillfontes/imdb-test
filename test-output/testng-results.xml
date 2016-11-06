@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" total="21" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="IMDB Top 250 Search" duration-ms="16367" started-at="2016-11-05T18:59:00Z" finished-at="2016-11-05T18:59:17Z">
+  <suite name="IMDB HomePage, Top Charts and Genre Page Tests" duration-ms="28562" started-at="2016-11-06T12:33:59Z" finished-at="2016-11-06T12:34:28Z">
     <groups>
       <group name="resultCount">
         <method signature="TopChartsPageTest.selectByNumberOfRatings()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByNumberOfRatings" class="com.imdb.demo.TopChartsPageTest"/>
@@ -12,53 +12,53 @@
         <method signature="TopChartsPageTest.selectIMDBRating()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectIMDBRating" class="com.imdb.demo.TopChartsPageTest"/>
       </group> <!-- resultCount -->
     </groups>
-    <test name="HomePage Tests" duration-ms="1041" started-at="2016-11-05T18:59:00Z" finished-at="2016-11-05T18:59:01Z">
+    <test name="HomePage &gt; Top Charts" duration-ms="927" started-at="2016-11-06T12:33:59Z" finished-at="2016-11-06T12:34:00Z">
       <class name="com.imdb.demo.HomePageTest">
-        <test-method status="PASS" signature="isHomePageLoaded()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="isHomePageLoaded" duration-ms="164" started-at="2016-11-05T19:59:00Z" finished-at="2016-11-05T19:59:01Z">
+        <test-method status="PASS" signature="isHomePageLoaded()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="isHomePageLoaded" duration-ms="110" started-at="2016-11-06T13:33:59Z" finished-at="2016-11-06T13:34:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isHomePageLoaded -->
-        <test-method status="PASS" signature="shouldDisplayMenuOnHover()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="shouldDisplayMenuOnHover" duration-ms="671" started-at="2016-11-05T19:59:01Z" depends-on-methods="com.imdb.demo.HomePageTest.isHomePageLoaded" finished-at="2016-11-05T19:59:01Z">
+        <test-method status="PASS" signature="shouldDisplayMenuOnHover()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="shouldDisplayMenuOnHover" duration-ms="648" started-at="2016-11-06T13:34:00Z" depends-on-methods="com.imdb.demo.HomePageTest.isHomePageLoaded" finished-at="2016-11-06T13:34:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldDisplayMenuOnHover -->
-        <test-method status="PASS" signature="clickTopChartMenu()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="clickTopChartMenu" duration-ms="183" started-at="2016-11-05T19:59:01Z" depends-on-methods="com.imdb.demo.HomePageTest.shouldDisplayMenuOnHover" finished-at="2016-11-05T19:59:01Z">
+        <test-method status="PASS" signature="clickTopChartMenu()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="clickTopChartMenu" duration-ms="151" started-at="2016-11-06T13:34:00Z" depends-on-methods="com.imdb.demo.HomePageTest.shouldDisplayMenuOnHover" finished-at="2016-11-06T13:34:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTopChartMenu -->
       </class> <!-- com.imdb.demo.HomePageTest -->
-    </test> <!-- HomePage Tests -->
-    <test name="IMDB Top Charts" duration-ms="12269" started-at="2016-11-05T18:59:01Z" finished-at="2016-11-05T18:59:14Z">
+    </test> <!-- HomePage > Top Charts -->
+    <test name="Top Charts &gt; Genre Page - Western" duration-ms="8428" started-at="2016-11-06T12:34:00Z" finished-at="2016-11-06T12:34:09Z">
       <class name="com.imdb.demo.TopChartsPageTest">
-        <test-method status="PASS" signature="isTopChartsPageLoaded()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="isTopChartsPageLoaded" duration-ms="4390" started-at="2016-11-05T19:59:01Z" finished-at="2016-11-05T19:59:06Z">
+        <test-method status="PASS" signature="isTopChartsPageLoaded()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="isTopChartsPageLoaded" duration-ms="3098" started-at="2016-11-06T13:34:00Z" finished-at="2016-11-06T13:34:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isTopChartsPageLoaded -->
-        <test-method status="PASS" signature="selectByNumberOfRatings()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByNumberOfRatings" duration-ms="1877" started-at="2016-11-05T19:59:06Z" finished-at="2016-11-05T19:59:08Z">
+        <test-method status="PASS" signature="selectByNumberOfRatings()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByNumberOfRatings" duration-ms="1376" started-at="2016-11-06T13:34:03Z" finished-at="2016-11-06T13:34:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByNumberOfRatings -->
-        <test-method status="PASS" signature="selectByRanking()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByRanking" duration-ms="1628" started-at="2016-11-05T19:59:08Z" finished-at="2016-11-05T19:59:09Z">
+        <test-method status="PASS" signature="selectByRanking()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByRanking" duration-ms="1224" started-at="2016-11-06T13:34:05Z" finished-at="2016-11-06T13:34:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByRanking -->
-        <test-method status="PASS" signature="selectByReleaseDate()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByReleaseDate" duration-ms="1322" started-at="2016-11-05T19:59:09Z" finished-at="2016-11-05T19:59:11Z">
+        <test-method status="PASS" signature="selectByReleaseDate()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByReleaseDate" duration-ms="1002" started-at="2016-11-06T13:34:06Z" finished-at="2016-11-06T13:34:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByReleaseDate -->
-        <test-method status="PASS" signature="selectByYourRating()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByYourRating" duration-ms="1521" started-at="2016-11-05T19:59:11Z" finished-at="2016-11-05T19:59:12Z">
+        <test-method status="PASS" signature="selectByYourRating()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectByYourRating" duration-ms="1000" started-at="2016-11-06T13:34:07Z" finished-at="2016-11-06T13:34:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByYourRating -->
-        <test-method status="PASS" signature="selectIMDBRating()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectIMDBRating" duration-ms="815" started-at="2016-11-05T19:59:12Z" finished-at="2016-11-05T19:59:13Z">
+        <test-method status="PASS" signature="selectIMDBRating()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="selectIMDBRating" duration-ms="336" started-at="2016-11-06T13:34:08Z" finished-at="2016-11-06T13:34:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectIMDBRating -->
-        <test-method status="PASS" signature="areInitialResultsLoaded()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="areInitialResultsLoaded" duration-ms="258" started-at="2016-11-05T19:59:13Z" depends-on-methods="com.imdb.demo.TopChartsPageTest.isTopChartsPageLoaded" finished-at="2016-11-05T19:59:13Z">
+        <test-method status="PASS" signature="areInitialResultsLoaded()[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="areInitialResultsLoaded" duration-ms="149" started-at="2016-11-06T13:34:08Z" depends-on-methods="com.imdb.demo.TopChartsPageTest.isTopChartsPageLoaded" finished-at="2016-11-06T13:34:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- areInitialResultsLoaded -->
-        <test-method status="PASS" signature="clickOnGenre(java.lang.String)[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="clickOnGenre" duration-ms="424" depends-on-groups="resultCount" started-at="2016-11-05T19:59:13Z" finished-at="2016-11-05T19:59:14Z">
+        <test-method status="PASS" signature="clickOnGenre(java.lang.String)[pri:0, instance:com.imdb.demo.TopChartsPageTest@402a079c]" name="clickOnGenre" duration-ms="220" depends-on-groups="resultCount" started-at="2016-11-06T13:34:09Z" finished-at="2016-11-06T13:34:09Z">
           <params>
             <param index="0">
               <value>
@@ -70,10 +70,10 @@
           </reporter-output>
         </test-method> <!-- clickOnGenre -->
       </class> <!-- com.imdb.demo.TopChartsPageTest -->
-    </test> <!-- IMDB Top Charts -->
-    <test name="IMDB Top Charts &gt; Western" duration-ms="3011" started-at="2016-11-05T18:59:14Z" finished-at="2016-11-05T18:59:17Z">
+    </test> <!-- Top Charts > Genre Page - Western -->
+    <test name="Genre Page - Western" duration-ms="19173" started-at="2016-11-06T12:34:09Z" finished-at="2016-11-06T12:34:28Z">
       <class name="com.imdb.demo.ResultsByGenreTest">
-        <test-method status="PASS" signature="isResultsByGenrePageLoaded(java.lang.String)[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="isResultsByGenrePageLoaded" duration-ms="3008" started-at="2016-11-05T19:59:14Z" finished-at="2016-11-05T19:59:17Z">
+        <test-method status="PASS" signature="isResultsByGenrePageLoaded(java.lang.String)[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="isResultsByGenrePageLoaded" duration-ms="2295" started-at="2016-11-06T13:34:09Z" finished-at="2016-11-06T13:34:11Z">
           <params>
             <param index="0">
               <value>
@@ -84,17 +84,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isResultsByGenrePageLoaded -->
+        <test-method status="PASS" signature="areInitialResultsLoaded()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="areInitialResultsLoaded" duration-ms="63" started-at="2016-11-06T13:34:11Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.isResultsByGenrePageLoaded" finished-at="2016-11-06T13:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- areInitialResultsLoaded -->
+        <test-method status="PASS" signature="sortByAlphabetical()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByAlphabetical" duration-ms="2285" started-at="2016-11-06T13:34:11Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByAlphabetical -->
+        <test-method status="PASS" signature="sortByIMDBRating()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByIMDBRating" duration-ms="2046" started-at="2016-11-06T13:34:13Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByIMDBRating -->
+        <test-method status="PASS" signature="sortByNumberOfVotes()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByNumberOfVotes" duration-ms="2061" started-at="2016-11-06T13:34:15Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByNumberOfVotes -->
+        <test-method status="PASS" signature="sortByPopularity()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByPopularity" duration-ms="2049" started-at="2016-11-06T13:34:18Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByPopularity -->
+        <test-method status="PASS" signature="sortByReleaseDate()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByReleaseDate" duration-ms="2162" started-at="2016-11-06T13:34:20Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByReleaseDate -->
+        <test-method status="PASS" signature="sortByRuntime()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByRuntime" duration-ms="2141" started-at="2016-11-06T13:34:22Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByRuntime -->
+        <test-method status="PASS" signature="sortByUSBoxOffice()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByUSBoxOffice" duration-ms="1880" started-at="2016-11-06T13:34:24Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByUSBoxOffice -->
+        <test-method status="PASS" signature="sortByYear()[pri:0, instance:com.imdb.demo.ResultsByGenreTest@31a5c39e]" name="sortByYear" duration-ms="2175" started-at="2016-11-06T13:34:26Z" depends-on-methods="com.imdb.demo.ResultsByGenreTest.areInitialResultsLoaded" finished-at="2016-11-06T13:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByYear -->
       </class> <!-- com.imdb.demo.ResultsByGenreTest -->
       <class name="com.imdb.demo.HomePageTest">
-        <test-method status="PASS" signature="startWebdriver()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="startWebdriver" is-config="true" duration-ms="20230" started-at="2016-11-05T19:58:40Z" finished-at="2016-11-05T19:59:00Z">
+        <test-method status="PASS" signature="startWebdriver()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="startWebdriver" is-config="true" duration-ms="17031" started-at="2016-11-06T13:33:42Z" finished-at="2016-11-06T13:33:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startWebdriver -->
-        <test-method status="PASS" signature="finishWebDriver()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="finishWebDriver" is-config="true" duration-ms="101" started-at="2016-11-05T19:59:17Z" finished-at="2016-11-05T19:59:17Z">
+        <test-method status="PASS" signature="finishWebDriver()[pri:0, instance:com.imdb.demo.HomePageTest@42d80b78]" name="finishWebDriver" is-config="true" duration-ms="101" started-at="2016-11-06T13:34:28Z" finished-at="2016-11-06T13:34:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishWebDriver -->
       </class> <!-- com.imdb.demo.HomePageTest -->
-    </test> <!-- IMDB Top Charts > Western -->
-  </suite> <!-- IMDB Top 250 Search -->
+    </test> <!-- Genre Page - Western -->
+  </suite> <!-- IMDB HomePage, Top Charts and Genre Page Tests -->
 </testng-results>

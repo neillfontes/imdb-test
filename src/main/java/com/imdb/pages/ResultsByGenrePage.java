@@ -10,8 +10,11 @@ public class ResultsByGenrePage {
 	
 	private WebDriverHelper wdHelper;
 
-	private static final String BODY	 			= "//body";
 	private static final String BASE_URL			= "http://www.imdb.com/search/title?genres=";
+	private static final String TABLE_RESULTS_COUNT = "//div[contains(@class, 'lister-item mode-')]";
+	private static final String SORTING_PLACEHOLDER = "%SORTING%";
+	
+	private String divSortingType					= "//div[@class = 'sorting']//*[text()[contains(., '%SORTING%')]]";
 	
 	public ResultsByGenrePage() {
 		this.wdHelper = WebDriverHelper.getInstance();
@@ -29,6 +32,13 @@ public class ResultsByGenrePage {
 		return this.wdHelper.getDriver().getCurrentUrl();
 	}
 	
+	public int getNumberOfResultsLoaded() {
+		List<WebElement> list = wdHelper.getListOfElements(TABLE_RESULTS_COUNT);
+		return list.size();
+	}
 	
+	public void clickSortOption(String option){
+		wdHelper.clickElement(divSortingType.replace(SORTING_PLACEHOLDER, option));
+	}
 
 }
